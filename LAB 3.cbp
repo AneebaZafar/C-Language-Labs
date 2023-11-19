@@ -1,0 +1,124 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+/*void _swap(int *a , int *b);                            //QUESTION NO:1
+int main()
+{ int a=3;
+int b=4;
+ _swap(  &a ,  &b);
+printf(" a is %d  and b is %d",a,b);
+
+
+    return 0;
+}
+void _swap(int *a , int *b){
+ int t = *a;
+ *a=*b;
+ *b=t;
+
+ #include<string.h>
+int main(){                                       //QUESTION NO:02
+char str[100]; printf("Enter a string: ");
+fgets(str, 100, stdin);
+char *ptr = &str[strlen(str)-1]; for(int i=strlen(str)-1; i>-1; i--){
+printf("%c",*ptr); ptr--;
+}
+return 0;
+}
+}
+
+int main(){                                    //QUESTION NO:03
+  int arraysize;
+  printf("enter an array size:");
+  scanf("%d",&arraysize);
+  int array[arraysize];
+  printf("enter %d elements:\n",arraysize);
+  for (int i =0; i<arraysize;i++){
+    printf("enter array element:");
+    scanf("%d",&array[i]);
+  }printf("elements in array are:");
+  int *ptr=array;
+  for (int i=1;i<=arraysize;i++){
+    printf("%d ",*ptr);
+    *ptr++;
+
+  }  printf("\n");
+  return 0;
+
+}
+
+int searchElement(const int *arr, int arraySize, int key) {                  //QUESTION NO:04
+    const int *ptr = arr; // Pointer pointing to the start of the array
+
+    for (int i = 0; i < arraySize; i++) {
+        if (*ptr == key) {
+            return i; // Return the index if the element is found
+        }
+        ptr++; // Move the pointer to the next element
+    }
+
+    return -1; // Return -1 if the element is not found
+}
+
+int main() {
+    int arraySize, key;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &arraySize);
+
+    int arr[arraySize];
+
+    printf("Enter %d elements:\n", arraySize);
+    for (int i = 0; i < arraySize; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter the element to search: ");
+    scanf("%d", &key);
+
+    int index = searchElement(arr, arraySize, key);
+
+    if (index != -1) {
+        printf("Element found at index %d.\n", index);
+    } else {
+        printf("Element not found in the array.\n");
+    }
+
+    return 0;
+}
+
+
+ int main(){
+int row, col;
+printf("How many rows should the matrices have? "); scanf("%d", &row);               //QUESTION NO:05
+printf("How many columns should the matrices have? "); scanf("%d", &col);
+int mat1[row][col]; int *ptr1 = mat1;
+printf("For Matrix 1\n"); for(int i=0; i<row;
+i++){
+for(int j=0; j<col; j++){
+printf("Enter element %d of row %d: ", j+1, i+1); scanf("%d", ptr1);
+ptr1++;
+}
+}
+int mat2[row][col]; int *ptr2 = mat2;
+printf("For Matrix 1\n"); for(int i=0; i<row;
+i++){
+for(int j=0; j<col; j++){
+printf("Enter element %d of row %d: ", j+1, i+1); scanf("%d", ptr2);
+ptr2++;
+}
+}
+ptr1 =mat1; ptr2 = mat2;
+int mat3[row][col]; int *ptr3 = mat3;
+for(int i=0; i<row; i++){ for(int j=0; j<col; j++){
+*ptr3 = *ptr1 + *ptr2; printf("%d ",
+*ptr3); ptr1++;
+ptr2++;
+ptr3++;
+}
+printf("\n");
+}
+return 0;
+ }*/
+
